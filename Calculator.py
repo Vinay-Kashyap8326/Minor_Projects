@@ -7,6 +7,6 @@ while(i < len(Operetors)) :
   i+=1
 Operator_Input = int(input("\nEnter Option: "))
 if((Operator_Input >= 0) and (Operator_Input <= len(Operetors))) :
-  print("Done")
+  pass
 else :
   print("Invalid Option")
