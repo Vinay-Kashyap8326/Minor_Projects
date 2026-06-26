@@ -1,4 +1,4 @@
-print("--- Calculator ---\n")
+print(f"{'--- Calculator ---\n':^53}")
 print("What You Want To Do ?\n")
 Operetors = ["Addition", "Subtraction", "Division", "Multiplication"]
 i = 0
