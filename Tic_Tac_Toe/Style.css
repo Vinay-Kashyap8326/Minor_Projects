@@ -24,11 +24,5 @@ body{
   width: 400px;
   height: 400px;
   background-color: #15BDAC;
-}
-.vertical-line{
-  position: absolute;
-  display: inline;
-  height: 1200px;
-  width: 30px;
-  background-color: #0DA191;
+  border: 25px solid #0DA191;
 }
