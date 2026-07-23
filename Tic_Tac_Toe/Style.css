@@ -24,5 +24,23 @@ body{
   width: 400px;
   height: 400px;
   background-color: #15BDAC;
+}
+#top-left{
+  border-right: 25px solid #0DA191;
+  border-bottom: 25px solid #0DA191;
+}
+#top-right{
+  border-left: 25px solid #0DA191;
+  border-bottom: 25px solid #0DA191;
+}
+#middle-center{
   border: 25px solid #0DA191;
+}
+#bottom-left{
+  border-right: 25px solid #0DA191;
+  border-top: 25px solid #0DA191;
+}
+#bottom-right{
+  border-left: 25px solid #0DA191;
+  border-top: 25px solid #0DA191;
 }
