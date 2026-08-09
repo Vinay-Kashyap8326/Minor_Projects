@@ -1,50 +1,76 @@
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
 }
-body{
+body {
   width: 100%;
   height: 100vh;
   background-color: #15BDAC;
+  text-align: center;
+}
+#container {
+  width: 100%;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#container{
-  width: 1200px;
-  height: 1200px;
+.Game {
+  width: 70%;
+  height: 37vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
-  
 }
-.button{
-  width: 400px;
-  height: 400px;
+.button {
+  width: 5.25rem;
+  height: 5.25rem;
   background-color: #15BDAC;
-  font-size: 250px;
+  font-size: 3.5rem;
 }
-#topLeft{
-  border-right: 25px solid #0DA191;
-  border-bottom: 25px solid #0DA191;
-  
-  
+#topLeft {
+  border-right: 5px solid #0DA191;
+  border-bottom: 5px solid #0DA191;
+
+
 }
-#topRight{
-  border-left: 25px solid #0DA191;
-  border-bottom: 25px solid #0DA191;
+#topRight {
+  border-left: 5px solid #0DA191;
+  border-bottom: 5px solid #0DA191;
 }
-#middleCenter{
-  border: 25px solid #0DA191;
+#middleCenter {
+  border: 5px solid #0DA191;
 }
-#bottomLeft{
-  border-right: 25px solid #0DA191;
-  border-top: 25px solid #0DA191;
+#bottomLeft {
+  border-right: 5px solid #0DA191;
+  border-top: 5px solid #0DA191;
 }
-#bottomRight{
-  border-left: 25px solid #0DA191;
-  border-top: 25px solid #0DA191;
+#bottomRight {
+  border-left: 5px solid #0DA191;
+  border-top: 5px solid #0DA191;
+}
+.status {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.status p {
+  font-size: 13vmin;
+  margin-bottom: 10px;
+  color: #ffffffce;
+}
+.newGame, .resetButton {
+  border-radius: 10px;
+  width: 40vmin;
+  height: 13vmin;
+  font-size: 1.25rem;
+  background-color: #f3ff16;
+  color: #000000;
+  margin-bottom: 50px;
 }
