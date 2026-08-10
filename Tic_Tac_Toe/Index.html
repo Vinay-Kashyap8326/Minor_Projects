@@ -8,11 +8,17 @@
   <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-  <div class="status">
+  <div class="status hide">
     <p>
       Winner
     </p>
     <button class=newGame>New Game</button>
+  </div>
+  <h1>Tic Tac Toe</h1>
+  <h3>Points</h3>
+  <div class="scores">
+    <div id="playerOne">Player X - 0</div>
+    <div id="playerTwo">Player O - 0</div>
   </div>
   <div id="container">
     <div class="Game">
@@ -26,8 +32,9 @@
       <button class=button id="bottomCenter"></button>
       <button class=button id="bottomRight"></button>
     </div>
+    <button class=resetButton>Reset</button>
+    <button class=resetScore>Reset Score</button>
   </div>
-  <button class=resetButton>Reset</button>
   <script src="Script.js"></script>
 </body>
 </html>

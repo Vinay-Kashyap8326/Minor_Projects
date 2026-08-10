@@ -11,14 +11,16 @@ body {
 }
 #container {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 40px;
 }
 .Game {
-  width: 70%;
-  height: 37vh;
+  width: 252px;
+  height: 252px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,8 +36,6 @@ body {
 #topLeft {
   border-right: 5px solid #0DA191;
   border-bottom: 5px solid #0DA191;
-
-
 }
 #topRight {
   border-left: 5px solid #0DA191;
@@ -65,12 +65,42 @@ body {
   margin-bottom: 10px;
   color: #ffffffce;
 }
-.newGame, .resetButton {
+.newGame, .resetButton{
   border-radius: 10px;
-  width: 40vmin;
-  height: 13vmin;
+  width: 150px;
+  height: 50px;
   font-size: 1.25rem;
   background-color: #f3ff16;
   color: #000000;
-  margin-bottom: 50px;
+}
+.resetScore{
+  border-radius: 10px;
+  width: 125px;
+  height: 40px;
+  font-size: 1.10rem;
+  margin-top: -20px;
+  background-color: #f3ff16;
+  color: #000000;
+}
+.hide{
+  display: none;
+}
+h1{
+  font-size: 47px;
+  color: rgba(0, 18, 180, 0.986);
+}
+h3{
+  font-size: 33px;
+  color: #e2e1e1;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+.scores{
+  font-size: 25px;
+  color: rgb(255, 174, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 20px;
 }
