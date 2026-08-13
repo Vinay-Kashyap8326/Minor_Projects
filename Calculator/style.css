@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#calculatorBox {
+  height: 713px;
+  width: 374px;
+  background-color: #010101;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#headerArea {
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+  margin-top: 10px;
+}
+#rightPart {
+  width: 60px;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  color: #FFFFFF;
+}
+button {
+  width: 74px;
+  height: 74px;
+  border-radius: 50px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#buttons {
+  width: 344px;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #010101;
+  margin-bottom: 10px;
+}
+.numbers, .otherFunctions{
+  background-color: #171719;
+}
+.delete, .bracket {
+  font-size: 25px;
+}
+.operators{
+  font-size: 40px;
+}

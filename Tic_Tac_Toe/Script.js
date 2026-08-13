@@ -12,8 +12,7 @@ let count = 0;
 let scoreOfX = 0;
 let scoreOfO = 0;
 const winConditons = [[0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 4, 8], [2, 4, 6]]; //all winning conditions.
-let winChecker = () => {
-  // check all winning conditions.
+let winChecker = () => {// check all winning conditions.
   for (let i of winConditons) {
     // take positions.
     let pos1 = buttons[i[0]].innerText;
@@ -38,7 +37,6 @@ let winChecker = () => {
           plyO.innerText = `Player O - ${scoreOfO}`;
         }
       }
-
     }
     if (count === 9) {
       //if match will draw then show it and on page.
