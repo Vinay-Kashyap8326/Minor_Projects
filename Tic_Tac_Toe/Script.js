@@ -91,4 +91,5 @@ newButton.addEventListener("click", () => {
 resetButton.addEventListener("click", () => {
   empty();
   turn = true;
+  count = 0;
 });
