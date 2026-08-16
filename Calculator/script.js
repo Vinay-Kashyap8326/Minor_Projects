@@ -24,9 +24,20 @@ operators.forEach((opt) => {
   opt.addEventListener("click",
     () => {
       if (output.innerText !== "") {
-        output.innerText += opt.innerText;
-        inputArray.push(opt.innerText);
-        opt.disabled = true;
+        let inputArrayInString = inputArray.toString();
+        let checkOpt = inputArrayInString[inputArrayInString.length-1];
+        if (checkOpt === '+' || checkOpt === '-' || checkOpt === '×' || checkOpt === '÷') {
+          inputArray.splice(inputArray.length-1, 1, opt.innerText);
+          output.innerText = inputArray.join('');
+          opt.disabled = true;
+        } else {
+          for(let btn of operators){
+            btn.disabled = false;
+          }
+          output.innerText += opt.innerText;
+          inputArray.push(opt.innerText);
+          opt.disabled = true;
+        };
       };
     });
 });
