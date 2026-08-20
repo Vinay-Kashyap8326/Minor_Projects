@@ -2,6 +2,7 @@ let numberButtons = document.querySelectorAll(".numbers");
 let output = document.querySelector("#inputArea");
 let clearButton = document.querySelector(".Clear");
 let operators = document.querySelectorAll(".operators");
+let deleteButton = document.querySelector(".delete");
 let count = 0;
 let inputArray = [];
 let enable = (button) => {
