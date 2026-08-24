@@ -47,3 +47,4 @@ clearButton.addEventListener("click", () => {
   count = 0;
   inputArray.length = 0;
 });
+xgixgixfux
