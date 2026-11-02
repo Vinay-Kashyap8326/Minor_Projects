@@ -746,7 +746,6 @@ a {
     width: 100%;
   }
 }
-
 @media(prefers-reduced-motion:reduce) {
   *,*::before,*::after {
     scroll-behavior: auto !important;
