@@ -25,6 +25,7 @@ body {
   font-family: 'DM Sans', sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
+  padding-top: 82px;
 }
 
 a {
@@ -45,8 +46,14 @@ a {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--border);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
+  background: rgba(8, 13, 27, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -641,6 +648,9 @@ a {
 }
 
 @media(max-width:600px) {
+    body {
+    padding-top: 72px;
+  }
   .navbar {
     height: 72px;
   }
