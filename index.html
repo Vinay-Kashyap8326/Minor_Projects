@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Explore programming projects by Vinay Kashyap, including web development, games and programming experiments.">
+  <meta name="keywords" content="Vinay Kashyap, portfolio, web development, programming projects, Java, HTML, CSS">
+  <meta name="author" content="Vinay Kashyap">
+  <title>Vinay Kashyap — Projects & Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-glow glow-one" aria-hidden="true"></div>
+  <div class="page-glow glow-two" aria-hidden="true"></div>
+
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Vinay Kashyap home">
+      <span class="brand-mark">VK</span>
+      <span>Vinay Kashyap<span class="brand-dot">.</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a class="nav-cta" href="mailto:YOUR_EMAIL@example.com">Contact <span aria-hidden="true">↗</span></a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> BUILDING • LEARNING • IMPROVING</div>
+        <h1>Turning ideas into<br><span class="gradient-text">digital projects.</span></h1>
+        <p class="hero-lead">Hi, I'm <strong>Vinay Kashyap</strong> — a student developer exploring programming, web development and problem-solving through hands-on projects.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="mailto:YOUR_EMAIL@example.com">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <span><i class="meta-icon">⌘</i> Student developer</span>
+          <span><i class="meta-icon">⌖</i> India</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative code illustration">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="code-window">
+          <div class="window-top"><span></span><span></span><span></span><b>developer.js</b></div>
+          <div class="code-lines">
+            <p><i>01</i> <em>const</em> developer = {</p>
+            <p><i>02</i> &nbsp; name: <strong>"Vinay"</strong>,</p>
+            <p><i>03</i> &nbsp; focus: <strong>"Building"</strong>,</p>
+            <p><i>04</i> &nbsp; mindset: <strong>"Keep learning"</strong></p>
+            <p><i>05</i> };</p>
+            <p class="code-comment"><i>06</i> // More projects coming soon...</p>
+            <p><i>07</i> <b class="cursor">▍</b></p>
+          </div>
+        </div>
+        <div class="floating-chip chip-top">{"</>"}</div>
+        <div class="floating-chip chip-bottom">✦ &nbsp; CREATE</div>
+      </div>
+    </section>
+
+    <section class="stats container" aria-label="Portfolio highlights">
+      <div><strong>01</strong><span>Curiosity first</span></div>
+      <div><strong>02</strong><span>Learn by building</span></div>
+      <div><strong>03</strong><span>Improve every day</span></div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="section-kicker">A LITTLE ABOUT ME</p>
+        <h2>Learning through <span class="gradient-text">making.</span></h2>
+      </div>
+      <div class="about-panel">
+        <div class="about-symbol">✳</div>
+        <p>I enjoy exploring how software works and turning what I learn into practical projects. This portfolio is a home for my experiments, practice work and future builds.</p>
+        <span class="about-note">This site will grow as I build more.</span>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading heading-row">
+        <div>
+          <p class="section-kicker">SELECTED WORK</p>
+          <h2>Projects<span class="gradient-text">.</span></h2>
+          <p class="section-description">A collection of things I've built and explored.</p>
+        </div>
+        <span class="project-count">01 — 04</span>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-visual visual-calculator"><span class="visual-symbol">＋</span><span class="visual-label">CALCULATE / 01</span><div class="mini-calculator"><b>08,256</b><div><i>+</i><i>−</i><i>×</i><i>÷</i></div></div></div>
+          <div class="project-info"><div class="project-type">WEB PROJECT</div><h3>Calculator</h3><p>A browser-based calculator project.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="./Calculator/">View project <span>↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-atm"><span class="visual-symbol">▣</span><span class="visual-label">BANKING / 02</span><div class="atm-card"><small>ATM SYSTEM</small><strong>•••• 2048</strong><span>SECURE ACCESS</span></div></div>
+          <div class="project-info"><div class="project-type">PROGRAMMING PROJECT</div><h3>ATM Project</h3><p>An ATM-themed programming project.</p><div class="tags"><span>Programming</span><span>Logic</span></div><a class="project-link" href="./Atm/">View project <span>↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-chess"><span class="visual-symbol">♞</span><span class="visual-label">STRATEGY / 03</span><div class="chess-board" aria-hidden="true">♜♞♝♛<br>♟♟♟♟<br>♙♙♙♙<br>♖♘♗♕</div></div>
+          <div class="project-info"><div class="project-type">GAME PROJECT</div><h3>Chess Game</h3><p>A chess game project and experiment.</p><div class="tags"><span>Game</span><span>Programming</span></div><a class="project-link" href="./Chess_Game/">View project <span>↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-guess"><span class="visual-symbol">?</span><span class="visual-label">INTERACTIVE / 04</span><div class="guess-number"><span>?</span><b>GUESS THE NUMBER</b><small>YOUR NEXT TRY</small></div></div>
+          <div class="project-info"><div class="project-type">WEB GAME</div><h3>Guess Number</h3><p>A small number-guessing web project.</p><div class="tags"><span>HTML</span><span>JavaScript</span></div><a class="project-link" href="./Guess_number_Web_Page.html">View project <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="link-note">If a project link shows 404, check that its folder contains an <code>index.html</code> file and that the folder name matches the link exactly.</p>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading">
+        <p class="section-kicker">TOOLS & TECHNOLOGIES</p>
+        <h2>What I'm <span class="gradient-text">working with.</span></h2>
+      </div>
+      <div class="skill-list">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Java</span><span>Python</span><span>C</span><span>GitHub</span>
+      </div>
+      <p class="skill-disclaimer">Skills listed reflect my learning and project practice; this section will be updated as I progress.</p>
+    </section>
+
+    <section class="contact-section container" id="contact">
+      <div><p class="section-kicker">HAVE A QUESTION?</p><h2>Let's connect<span class="gradient-text">.</span></h2><p>For feedback, collaboration or a conversation about projects.</p></div>
+      <a class="button button-primary" href="mailto:YOUR_EMAIL@example.com">Email me <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <a class="brand" href="#home"><span class="brand-mark">VK</span><span>Vinay Kashyap<span class="brand-dot">.</span></span></a>
+    <p>Designed & built with curiosity. © <span id="year"></span> Vinay Kashyap.</p>
+    <a class="back-top" href="#home">Back to top ↑</a>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const toggle = document.getElementById("menuToggle");
+    const links = document.getElementById("navLinks");
+    toggle.addEventListener("click", () => {
+      const open = links.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(open));
+    });
+    links.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      links.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    }));
+  </script>
+</body>
+</html>
