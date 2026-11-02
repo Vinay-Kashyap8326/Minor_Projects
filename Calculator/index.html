@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Calculator</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="calculatorBox">
     <div id="headerArea">
-      <a href="#">
+      <a href="#" aria-label="History">
         <i class="fa-solid fa-clock-rotate-left"></i>
       </a>
       <div id="rightPart">
-        <a href="#">
+        <a href="#" aria-label="Units (coming soon)" title="Coming soon">
           <i class="fa-solid fa-ruler"></i>
         </a>
-        <a href="#">
+        <a href="#" aria-label="Square root (coming soon)" title="Coming soon">
           <i class="fa-solid fa-square-root-variable"></i>
         </a>
       </div>
@@ -26,7 +25,7 @@
     <div id="inputArea"></div>
     <div id="buttons">
       <button class="otherFunctions Clear">C</button>
-      <button class="otherFunctions delete">
+      <button class="otherFunctions delete" aria-label="Delete">
         <i class="fa-solid fa-delete-left"></i>
       </button>
       <button class="otherFunctions">%</button>

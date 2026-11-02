@@ -8,8 +8,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 #calculatorBox {
+  position: relative;
   height: 713px;
   width: 374px;
   background-color: #010101;
@@ -34,16 +36,32 @@ body {
 }
 a {
   color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
 }
 button {
   width: 72px;
   height: 72px;
   border-radius: 50px;
   font-size: 35px;
+  font-family: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  transition: filter 0.15s, transform 0.1s;
+}
+button:hover {
+  filter: brightness(1.25);
+}
+button:active {
+  transform: scale(0.94);
+}
+button:focus-visible {
+  outline: 2px solid #197E70;
+  outline-offset: 2px;
 }
 #buttons {
   width: 344px;
@@ -63,21 +81,99 @@ button {
 }
 .operators {
   font-size: 40px;
+  background-color: #282828;
 }
 .Clear, .delete {
   color: #E76D6C;
-}
-.operators {
-  background-color: #282828;
 }
 .equal {
   background-color: #197E70;
 }
 #inputArea {
+  flex: 1;
+  min-height: 0;
   width: 100%;
-  height: 55px;
-  margin-top: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   text-align: right;
-  font-size: 37px;
   color: #ffffff;
+  overflow: hidden;
+}
+#expression {
+  min-height: 26px;
+  line-height: 26px;
+  font-size: 20px;
+  color: #8e8e93;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+#result {
+  line-height: 1.2;
+  font-size: 48px;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+#expression::-webkit-scrollbar,
+#result::-webkit-scrollbar {
+  display: none;
+}
+
+/* History panel */
+#historyPanel {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #010101;
+  padding: 10px 30px 30px;
+  display: none;
+  flex-direction: column;
+  overflow-y: auto;
+  color: #ffffff;
+}
+#historyPanel.open {
+  display: flex;
+}
+#historyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #282828;
+  font-size: 18px;
+}
+#clearHistory {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  font-size: 16px;
+  color: #E76D6C;
+  background: none;
+  padding: 6px 0;
+}
+.historyItem {
+  padding: 14px 0;
+  border-bottom: 1px solid #171719;
+  text-align: right;
+  cursor: pointer;
+}
+.historyItem:hover {
+  background-color: #0c0c0d;
+}
+.historyExpr {
+  font-size: 16px;
+  color: #8e8e93;
+}
+.historyResult {
+  font-size: 30px;
+}
+.historyEmpty {
+  margin-top: 40px;
+  text-align: center;
+  color: #8e8e93;
+  font-size: 16px;
 }
