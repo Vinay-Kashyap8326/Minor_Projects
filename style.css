@@ -494,6 +494,26 @@ a {
   letter-spacing: 1px;
 }
 
+/* Clean City project card */
+.clean {
+  background: radial-gradient(circle,#e9fbef,#bfe9cf);
+}
+
+.clean .project-number {
+  color: #1f4d3a;
+}
+
+.clean-icon {
+  width: 110px;
+  height: 110px;
+  display: grid;
+  place-items: center;
+  font-size: 58px;
+  background: #ffffffee;
+  border-radius: 50%;
+  box-shadow: 0 15px 35px #0006;
+}
+
 .project-content {
   padding: 23px;
 }
